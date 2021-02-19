@@ -13,24 +13,6 @@
     <link rel="stylesheet" href="./fonts/iconfont.css">
     
     <title>实时监测</title>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            function handleCalc() {
-                var dw = document.body.clientWidth;
-                var minScale = dw / 1920;
-                if (minScale < 1200 / 1920) {
-                    minScale = 1200 / 1920;
-                } else if (minScale > 1) {
-                    minScale = 1;
-                }
-                document.documentElement.style.fontSize = (minScale * 100) + 'px';
-            }
-            handleCalc();
-            window.addEventListener('resize', handleCalc);
-            window.addEventListener('resize', myChart);
-
-        });
-    </script>
 </head>
 
 <body>
@@ -491,5 +473,25 @@ $('#selectItem li').click(function(){
     flag = true
     $('#selectItem').hide()
 })
+
+//使用css适配几种常用分辨率 解决resize抖动问题
+
+// // document.addEventListener('DOMContentLoaded', function() {
+//     function handleCalc() {
+//         var dw = document.body.clientWidth;
+//         console.log(dw)
+//         var minScale = dw / 1920;
+//         if (minScale < 1200 / 1920) {
+//             minScale = 1200 / 1920;
+//         } else if (minScale > 1) {
+//             minScale = 1;
+//         }
+//         console.log(minScale)
+//         document.documentElement.style.fontSize = (minScale * 100) + 'px';
+//     }
+//     handleCalc();
+//     // window.addEventListener('resize', handleCalc);
+//     // window.addEventListener('resize', myChart);
+// // });
 </script>
 </html>

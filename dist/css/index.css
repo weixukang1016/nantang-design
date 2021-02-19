@@ -395,3 +395,27 @@ body, html {
 .page-warp1 p .page-item-active{
   background: #00B1FF;
 }
+
+@media screen and (max-width: 2560px) {
+  html{
+    font-size: 133px;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  html{
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  html{
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html{
+    font-size: 71px;
+  }
+}
